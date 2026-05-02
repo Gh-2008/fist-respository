@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <h2>Criar conta</h2>
+
+  <form id="formCadastro">
+    <label for="usuario">Usuário:</label><br>
+    <input type="text" id="usuario" name="usuario" placeholder="seu_usuario" required><br><br>
+
+    <label for="numero">Número (telefone):</label><br>
+    <input type="tel" id="numero" name="numero" placeholder="(84) 99999-9999" maxlength="15" required><br><br>
+
+    <label for="cep">CEP:</label><br>
+    <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="9" required><br><br>
+
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" placeholder="seu@email.com" required><br><br>
+
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha" placeholder="Mínimo 8 caracteres" minlength="8" required><br><br>
+
+    <label for="confirmar_senha">Confirmar senha:</label><br>
+    <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Repita a senha" required><br><br>
+
+    <input type="submit" value="Cadastrar">
+  </form>
+
+  <p>Já tem uma conta? <a href="login.html">Entrar</a></p>
+
+  <script>
+    const form = document.getElementById('formCadastro');
+    const campos = {
+      usuario: document.getElementById('usuario'),
+      telefone: document.getElementById('numero'),
+      cep: document.getElementById('cep'),
+      email: document.getElementById('email'),
+      senha: document.getElementById('senha'),
+      confirmarSenha: document.getElementById('confirmar_senha')
+    };
+
+    const alternarClasse = (campo, sucesso) => {
+      campo.classList.toggle('sucesso', sucesso);
+      campo.classList.toggle('erro', !sucesso);
+    };
+
+    // Máscara de Telefone
+    campos.telefone.addEventListener('input', (e) => {
+      let valor = e.target.value.replace(/\D/g, ""); 
+      valor = valor.replace(/^(\d{2})(\d)/g, "($1) $2");
+      valor = valor.replace(/(\d{5})(\d)/, "$1-$2");
+      e.target.value = valor.substring(0, 15);
+    });
+
+    // Máscara de CEP + Validação AJAX (Consumindo API Externa)
+    campos.cep.addEventListener('input', async (e) => {
+      let valor = e.target.value.replace(/\D/g, "");
+      valor = valor.replace(/^(\d{5})(\d)/, "$1-$2");
+      e.target.value = valor;
+
+      if (valor.length === 9) {
+        try {
+          const resposta = await fetch(`https://viacep.com.br/ws/${valor.replace('-', '')}/json/`);
+          const dados = await resposta.json();
+          alternarClasse(campos.cep, !dados.erro);
+        } catch {
+          alternarClasse(campos.cep, false);
+        }
+      }
+    });
+
+    // Validação de Senha
+    const validarSenhas = () => {
+      const equivalentes = campos.senha.value === campos.confirmarSenha.value;
+      const tamanhoValido = campos.senha.value.length >= 8;
+      alternarClasse(campos.senha, tamanhoValido);
+      alternarClasse(campos.confirmarSenha, equivalentes && tamanhoValido);
+      return equivalentes && tamanhoValido;
+    };
+
+    campos.confirmarSenha.addEventListener('input', validarSenhas);
+
+    // Envio do Formulário (Padrão de API Rest)
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      if (!validarSenhas() || campos.cep.classList.contains('erro')) {
+        alert('Por favor, corrija os erros antes de enviar.');
+        return;
+      }
+
+      const payload = {
+        usuario: campos.usuario.value,
+        telefone: campos.telefone.value,
+        cep: campos.cep.value,
+        email: campos.email.value,
+        senha: campos.senha.value
+      };
+
+      try {
+       const resposta = await fetch('cad.php', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(payload)
+});
+
+        const resultado = await resposta.json();
+
+        if (resposta.ok) {
+          alert(resultado.mensagem);
+          form.reset();
+          Object.values(campos).forEach(c => c.classList.remove('sucesso', 'erro'));
+        } else {
+          alert(`Erro: ${resultado.mensagem}`);
+        }
+      } catch {
+        alert('Erro crítico de conectividade com o servidor.');
+      }
+    });
+  </script>
+</body>
+</html>

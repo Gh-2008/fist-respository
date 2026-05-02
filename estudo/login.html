@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <h2>Bem-vindo</h2>
+
+  <form id="formLogin">
+    <label for="usuario">Usuário:</label><br>
+    <input type="text" id="usuario" name="usuario" placeholder="seu_usuario" required><br><br>
+
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha" placeholder="sua senha" required><br><br>
+
+    <input type="submit" value="Entrar">
+  </form>
+
+  <p>Não tem uma conta? <a href="cadastro.html">Cadastrar</a></p>
+
+  <script>
+    const form = document.getElementById('formLogin');
+    const campos = {
+      usuario: document.getElementById('usuario'),
+      senha: document.getElementById('senha')
+    };
+
+    const alternarClasse = (campo, sucesso) => {
+      campo.classList.toggle('sucesso', sucesso);
+      campo.classList.toggle('erro', !sucesso);
+    };
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault(); 
+
+      alternarClasse(campos.usuario, true);
+      alternarClasse(campos.senha, true);
+
+      const payload = {
+        usuario: campos.usuario.value,
+        senha: campos.senha.value
+      };
+
+      try {
+        const resposta = await fetch('login.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const resultado = await resposta.json();
+
+        if (resposta.ok) {
+          // ALERTA LINDO DE SUCESSO (Fecha sozinho após 2 segundos e redireciona)
+          Swal.fire({
+            title: 'Sucesso!',
+            text: resultado.mensagem,
+            icon: 'success',
+            timer: 2000,
+            showConfirmButton: false,
+            background: '#ffffff',
+            iconColor: '#2ecc71'
+          }).then(() => {
+            // Manda para a index.php (Sua página principal com a navbar inteligente)
+            window.location.href = 'painel.php'; 
+          });
+
+        } else {
+          // ALERTA DE ERRO
+          Swal.fire({
+            title: 'Ops!',
+            text: resultado.mensagem,
+            icon: 'error',
+            confirmButtonColor: '#e74c3c'
+          });
+          
+          alternarClasse(campos.usuario, false);
+          alternarClasse(campos.senha, false);
+        }
+      } catch {
+        Swal.fire({
+          title: 'Erro!',
+          text: 'Erro crítico de conectividade com o servidor.',
+          icon: 'warning',
+          confirmButtonColor: '#f39c12'
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
