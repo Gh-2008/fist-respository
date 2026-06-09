@@ -20,7 +20,7 @@
 
 ###
 
-<div align="left">
+<div align="right">
   <img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=73%20982054124&color=25D366&logoColor=white&labelColor=&style=plastic" height="45svh" alt="whatsapp logo"  />
 </div>
 
