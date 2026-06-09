@@ -21,7 +21,7 @@
 ###
 
 <div align="left">
-  <img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=73%20982054124&color=25D366&logoColor=white&labelColor=&style=plastic" height="100vh" alt="whatsapp logo"  />
+  <img src="https://img.shields.io/static/v1?message=Whatsapp&logo=whatsapp&label=73%20982054124&color=25D366&logoColor=white&labelColor=&style=plastic" height="50svh" alt="whatsapp logo"  />
 </div>
 
 ###
