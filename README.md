@@ -1,5 +1,4 @@
 <h1 align="center">Welcome</h1>
-###
 
 
 <img align="left" height="303" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGN3ZWZmMXVvbWNmdnJubzB2NWxkdWprN3VzNXo2ajhhOGZic3pqYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Cfiid6I8YDKqrCxAaY/giphy.gif"  />
