@@ -1,7 +1,6 @@
-<div align="center">
-  <kbd><p style="font-size: 50px; font-weight: bold; margin: 15px 40px;">Welcome</p></kbd>
-</div>
-
+<h1 align="center">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<kbd>&nbsp;&nbsp;&nbsp;&nbsp;Welcome&nbsp;&nbsp;&nbsp;&nbsp;</kbd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</h1>
 
 ###
 
