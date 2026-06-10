@@ -1,21 +1,12 @@
 # Olá, eu sou o Guilherme Heinrik! 👋
 
-<div align="center">
-  <img src="https://giphy.com" width="400" alt="Coding GIF">
-</div>
 
-## 🚀 Sobre mim
-Me chamo **Guilherme Heinrik Mendes Bahia**. Sou estudante do **3º ano do Curso Técnico Integrado em Informática** no **Instituto Federal da Bahia (IFBA)**. Estou sempre focado em evoluir minhas habilidades, resolver problemas através do código e aprender novas ferramentas para o meu desenvolvimento profissional.
+Me chamo **Guilherme Heinrik Mendes Bahia**. Sou estudante do **3º ano do Curso Técnico Integrado em Informática** no **Instituto Federal da Bahia (IFBA)**. Estou sempre focado em evoluir, e aprender novas ferramentas para o meu desenvolvimento profissional.
 
 - 🎓 Estudante de Informática no **IFBA**
 - 🌱 Atualmente focado em dominar o **Git** e controle de versão
 - 📈 Sempre buscando melhorar e aprender novas tecnologias diariamente
 - 💼 Aberto a projetos acadêmicos e colaborações
-
----
-
-## 🛠️ Tecnologias & Ferramentas
-Ferramentas e ambientes que utilizo nos meus estudos e projetos:
 
 <p align="left">
   <img src="https://shields.io" alt="Git"/>
@@ -25,19 +16,8 @@ Ferramentas e ambientes que utilizo nos meus estudos e projetos:
   <img src="https://shields.io" alt="Markdown"/>
 </p>
 
----
-
-## 📊 Estatísticas do GitHub
-<p align="left">
-  <img src="https://vercel.app" alt="Estatísticas do GitHub" height="150px"/>
-  <img src="https://vercel.app" alt="Linguagens mais usadas" height="150px"/>
-</p>
-
----
 
 ## 🤝 Entre em contato
-Sinta-se à vontade para me mandar uma mensagem para projetos ou troca de conhecimento!
-
 <p align="left">
   <a href="mailto:202413600019@ifba.edu.br">
     <img src="https://shields.io" alt="Email"/>
