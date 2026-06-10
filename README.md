@@ -9,13 +9,8 @@ Me chamo **Guilherme Heinrik Mendes Bahia**. Sou estudante do **3º ano do Curso
 - 💼 Aberto a projetos acadêmicos e colaborações
 
 ## 🤝 Entre em contato
-<p align="left">
-  <a href="mailto:202413600019@ifba.edu.br">
-    <img src="https://shields.io" alt="Email"/>
-  </a>
-</p>
 
-<img align="right" height="300" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWc1eDdqaGN4bGdlbnJxeWsyOXZyb3psbmtiY3BkMDN5cXI1M3BxNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26ni7nBRBBumFhB8Q/giphy.gif"  />
+<img align="right" height="2800" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWc1eDdqaGN4bGdlbnJxeWsyOXZyb3psbmtiY3BkMDN5cXI1M3BxNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26ni7nBRBBumFhB8Q/giphy.gif"  />
 
 ###
 
