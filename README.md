@@ -16,7 +16,7 @@
 
 ###
 
-<p align="left">- 🎓 Estudante de Informática no IFBA (3/4)  Informática<br>- 📈 Sempre buscando melhorar e aprender novas tecnologias diariamente<br>- 💼 Aberto a projetos acadêmicos e colaborações</p>
+<p align="left">- 🎓 Estudante de Informática no IFBA (3/4) Informática<br>- 🎯 Sempre buscando melhorar e aprender novas tecnologias diariamente<br>- 💼 Aberto a projetos acadêmicos e colaborações</p>
 
 ###
 
@@ -26,7 +26,7 @@
 
 ###
 
-<h2 align="left">📱Contato</h2>
+<h2 align="left">📱 Contato</h2>
 
 ###
 
@@ -38,7 +38,7 @@
 
 ###
 
-<h1 align="center">Estudando💻</h1>
+<h1 align="center">Estudando 💻</h1>
 
 ###
 
@@ -70,6 +70,6 @@
 
 ###
 
-<h5 align="left">Estou sempre estudando, praticando e explorando o mundo da programação. Gosto de aprender e conhecer linguagens novas para me tornar um desenvolvedor cada vez melhor.</h5>
+<h5 align="left">Estou sempre estudando, practicing e explorando o mundo da programação. Gosto de aprender e conhecer linguagens novas para me tornar um desenvolvedor cada vez melhor.</h5>
 
 ###
