@@ -1,7 +1,3 @@
-<img align="right" height="401" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGN3ZWZmMXVvbWNmdnJubzB2NWxkdWprN3VzNXo2ajhhOGZic3pqYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Cfiid6I8YDKqrCxAaY/giphy.gif"  />
-
-###
-
 <h1 align="center">Welcome</h1>
 
 ###
@@ -12,11 +8,19 @@
 
 ###
 
+<br clear="both">
+
 <h2 align="left">Meu nome é Guilherme Heinrik</h2>
 
 ###
 
+<br clear="both">
+
 <p align="left">- 🎓 Estudante de Informática no IFBA (3/4)  Informática<br>- 📈 Sempre buscando melhorar e aprender novas tecnologias diariamente<br>- 💼 Aberto a projetos acadêmicos e colaborações</p>
+
+###
+
+<img align="right" height="401" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGN3ZWZmMXVvbWNmdnJubzB2NWxkdWprN3VzNXo2ajhhOGZic3pqYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Cfiid6I8YDKqrCxAaY/giphy.gif"  />
 
 ###
 
