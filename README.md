@@ -2,31 +2,66 @@
 
 ###
 
-<div>
-  <img style="100%" src="https://vercel.app"  />
-</div>
+<img align="right" height="303" src="https://giphy.com"  />
 
-###
+<h2 align="left">Meu nome é Guilherme Heinrik</h2>
 
-<!-- Tabela para alinhar Texto e GIF lado a lado -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td align="left" valign="top" width="65%">
-      <h2>Meu nome é Guilherme Heinrik</h2>
-      <p>- 🎓 Estudante de Informática no IFBA (3/4) Informática</p>
-      <p>- 🎯 Sempre buscando melhorar e aprender novas tecnologias diariamente</p>
-      <p>- 💼 Aberto a projetos acadêmicos e colaborações</p>
-    </td>
-    <td align="right" valign="top" width="35%">
-      <img height="220" src="[https://giphy.com](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGN3ZWZmMXVvbWNmdnJubzB2NWxkdWprN3VzNXo2ajhhOGZic3pqYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Cfiid6I8YDKqrCxAaY/giphy.gif)" />
-    </td>
-  </tr>
-</table>
+<p align="left">- 🎓 Estudante de Informática no IFBA (3/4)  Informática<br>- 🎯 Sempre buscando melhorar e aprender novas tecnologias diariamente<br>- 💼 Aberto a projetos acadêmicos e colaborações</p>
+
+<br clear="right">
 
 ###
 
 <div>
   <img style="100%" src="https://vercel.app"  />
 </div>
+
+###
+
+<h2 align="left">📱Contato</h2>
+
+###
+
+<div align="left">
+  <a href="https://google.com" target="_blank">
+    <img src="https://shields.io" height="40" alt="gmail logo"  />
+  </a>
+</div>
+
+###
+
+<h1 align="center">Estudando💻</h1>
+
+###
+
+<div>
+  <img style="100%" src="https://vercel.app"  />
+</div>
+
+###
+
+<div align="left">
+  <img src="https://jsdelivr.net" height="83" alt="html5 logo"  />
+  <img width="22" />
+  <img src="https://jsdelivr.net" height="83" alt="css logo"  />
+  <img width="22" />
+  <img src="https://jsdelivr.net" height="83" alt="vscode logo"  />
+  <img width="22" />
+  <img src="https://jsdelivr.net" height="83" alt="git logo"  />
+</div>
+
+###
+
+<div>
+  <img style="100%" src="https://vercel.app"  />
+</div>
+
+###
+
+<h1 align="left">🎯 Objetivo</h1>
+
+###
+
+<h5 align="left">Estou sempre estudando, praticando e explorando o world da programação. Gosto de aprender e conhecer linguagens novas para me tornar um desenvolvedor cada vez melhor.</h5>
 
 ###
