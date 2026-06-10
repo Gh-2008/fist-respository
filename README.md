@@ -8,15 +8,6 @@ Me chamo **Guilherme Heinrik Mendes Bahia**. Sou estudante do **3º ano do Curso
 - 📈 Sempre buscando melhorar e aprender novas tecnologias diariamente
 - 💼 Aberto a projetos acadêmicos e colaborações
 
-<p align="left">
-  <img src="https://shields.io" alt="Git"/>
-  <img src="https://shields.io" alt="GitHub"/>
-  <img src="https://shields.io" alt="HTML5"/>
-  <img src="https://shields.io" alt="CSS3"/>
-  <img src="https://shields.io" alt="Markdown"/>
-</p>
-
-
 ## 🤝 Entre em contato
 <p align="left">
   <a href="mailto:202413600019@ifba.edu.br">
