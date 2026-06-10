@@ -1,3 +1,7 @@
+<img align="right" height="401" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGN3ZWZmMXVvbWNmdnJubzB2NWxkdWprN3VzNXo2ajhhOGZic3pqYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Cfiid6I8YDKqrCxAaY/giphy.gif"  />
+
+###
+
 <h1 align="center">Welcome</h1>
 
 ###
@@ -5,10 +9,6 @@
 <div>
   <img style="100%" src="https://capsule-render.vercel.app/api?type=soft&height=4&section=footer&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=dark"  />
 </div>
-
-###
-
-<img align="right" height="485" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGN3ZWZmMXVvbWNmdnJubzB2NWxkdWprN3VzNXo2ajhhOGZic3pqYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Cfiid6I8YDKqrCxAaY/giphy.gif"  />
 
 ###
 
