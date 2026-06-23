@@ -73,7 +73,6 @@
       }
     });
 
-    // Validação de Senha
     const validarSenhas = () => {
       const equivalentes = campos.senha.value === campos.confirmarSenha.value;
       const tamanhoValido = campos.senha.value.length >= 8;
@@ -83,8 +82,7 @@
     };
 
     campos.confirmarSenha.addEventListener('input', validarSenhas);
-
-    // Envio do Formulário (Padrão de API Rest)
+    
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
