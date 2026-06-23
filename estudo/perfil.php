@@ -1,23 +1,23 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['usuario_logado'])) {
+if (!isset($_SESSION['usuario'])) {
     header("Location: painel.php");
     exit;
 }
 
-$slugUsuario = preg_replace('/[^a-zA-Z0-9_\-]/', '', $_SESSION['usuario_logado']);
-$caminho_arquivo = "usuarios/" . $slugUsuario . "/dados.json";
+$slug = preg_replace('/[^a-zA-Z0-9_\-]/', '', $_SESSION['usuario']);
+$arquivo = "usuarios/" . $slug . "/dados.json";
 
-$email = $telefone = $cep = "";
+$email = $telefone = $cep = "Não informado";
 
-if (file_exists($caminho_arquivo)) {
-    $conteudo = file_get_contents($caminho_arquivo);
-    $dados_usuario = json_decode($conteudo, true);
+if (file_exists($arquivo)) {
+    $conteudo = file_get_contents($arquivo);
+    $dados = json_decode($conteudo, true);
     
-    $email = $dados_usuario['email'] ?? 'Não informado';
-    $telefone = $dados_usuario['telefone'] ?? 'Não informado';
-    $cep = $dados_usuario['cep'] ?? 'Não informado';
+    $email = $dados['email'] ?? 'Não informado';
+    $telefone = $dados['telefone'] ?? 'Não informado';
+    $cep = $dados['cep'] ?? 'Não informado';
 }
 ?>
 <!DOCTYPE html>
@@ -44,7 +44,7 @@ if (file_exists($caminho_arquivo)) {
       <div class="divisor"></div>
 
       <div class="info-group">
-        <p><strong>Usuário:</strong> <span><?php echo htmlspecialchars($_SESSION['usuario_logado']); ?></span></p>
+        <p><strong>Usuário:</strong> <span><?php echo htmlspecialchars($_SESSION['usuario']); ?></span></p>
         <p><strong>E-mail:</strong> <span><?php echo htmlspecialchars($email); ?></span></p>
         <p><strong>Telefone:</strong> <span><?php echo htmlspecialchars($telefone); ?></span></p>
         <p><strong>CEP:</strong> <span><?php echo htmlspecialchars($cep); ?></span></p>
