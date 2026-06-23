@@ -49,7 +49,7 @@
       campo.classList.toggle('erro', !sucesso);
     };
 
-    // Máscara de Telefone
+
     campos.telefone.addEventListener('input', (e) => {
       let valor = e.target.value.replace(/\D/g, ""); 
       valor = valor.replace(/^(\d{2})(\d)/g, "($1) $2");
@@ -57,7 +57,6 @@
       e.target.value = valor.substring(0, 15);
     });
 
-    // Máscara de CEP + Validação AJAX (Consumindo API Externa)
     campos.cep.addEventListener('input', async (e) => {
       let valor = e.target.value.replace(/\D/g, "");
       valor = valor.replace(/^(\d{5})(\d)/, "$1-$2");

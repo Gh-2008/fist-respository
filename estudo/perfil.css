@@ -1,11 +1,10 @@
-/* Estilos Gerais */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f6fa;
 }
 
-/* Navbar Simplificada do Perfil */
 .navbar-perfil {
   display: flex;
   justify-content: space-between;
@@ -32,7 +31,6 @@ body {
   color: #3498db;
 }
 
-/* Container Centralizado */
 .perfil-container {
   display: flex;
   justify-content: center;
@@ -40,7 +38,6 @@ body {
   padding: 50px 20px;
 }
 
-/* Card de Informações */
 .perfil-card {
   background-color: #fff;
   width: 100%;
@@ -63,7 +60,6 @@ body {
   margin: 20px 0;
 }
 
-/* Alinhamento dos Dados */
 .info-group {
   text-align: left;
   margin-bottom: 30px;
@@ -83,7 +79,6 @@ body {
   width: 90px;
 }
 
-/* Botão Sair Moderno */
 .btn-logout {
   display: block;
   padding: 12px;

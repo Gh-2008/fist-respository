@@ -56,7 +56,6 @@
         const resultado = await resposta.json();
 
         if (resposta.ok) {
-          // ALERTA LINDO DE SUCESSO (Fecha sozinho após 2 segundos e redireciona)
           Swal.fire({
             title: 'Sucesso!',
             text: resultado.mensagem,
@@ -66,12 +65,10 @@
             background: '#ffffff',
             iconColor: '#2ecc71'
           }).then(() => {
-            // Manda para a index.php (Sua página principal com a navbar inteligente)
             window.location.href = 'painel.php'; 
           });
 
         } else {
-          // ALERTA DE ERRO
           Swal.fire({
             title: 'Ops!',
             text: resultado.mensagem,
